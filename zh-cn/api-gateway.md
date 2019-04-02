@@ -5,7 +5,7 @@ Gateway 是基于 http-proxy 实现的一个简单 API 网关
 ## 安装
 
 ```bash
-npm install @nestcloud/gateway --save
+npm install @nestcloud/gateway@next --save
 ```
 
 ## 注册模块
@@ -17,14 +17,14 @@ import { NEST_BOOT } from '@nestcloud/common';
 
 @Module({
     imports: [
-        GatewayModule.register({dependencies: [NEST_BOOT]}),
+        GatewayModule.register({dependencies: [NEST_BOOT]}), // or NEST_CONSUL_CONFIG
     ]
 })
 export class AppModule {
 }
 ```
 
-## Boot 配置
+## 配置
 
 ```yaml
 gateway:
@@ -63,6 +63,26 @@ export class GatewayController {
 ```typescript
 const app = await NestFactory.create(AppModule, { bodyParser: false });
 ```
+
+## API 文档
+
+### class GatewayModule
+
+#### static register\(options: IGatewayOptions = {}, proxy?: IProxyOptions\): DynamicModule
+
+注册 gateway 模块
+
+| field | type | description |
+| :--- | :--- | :--- |
+| options.dependencies | string\[\] | 如果 dependencies 设置为 \[NEST\_BOOT\]，则通过 @nestcloud/boot 模块加载配置，如果设置为 \[NEST_CONSUL_CONFIG\] 则通过 @nestcloud/consul-config 加载配置，并支持动态更新 |
+| options.routes | IRoute[] | 路由转发规则 |
+| proxy | IProxyOptions | 略，详情请查看 http-proxy 文档 |
+
+### class Gateway
+
+#### updateRoutes(routes: IRoute[], sync: boolean = true): void;
+
+更新路由规则列表，如果 sync 为 false，则不会同步更新到 Consul KV，在某一时刻，更新过的路由列表会被 Consul KV 中的覆盖掉。
 
 ## TODO
 

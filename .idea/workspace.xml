@@ -1,7 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="291ee912-fced-4180-9ee5-edc88171529b" name="Default Changelist" comment="" />
+    <list default="true" id="291ee912-fced-4180-9ee5-edc88171529b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/zh-cn/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_coverpage.md" beforeDir="false" afterPath="$PROJECT_DIR$/_coverpage.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_media/nestcloud.png" beforeDir="false" afterPath="$PROJECT_DIR$/_media/nestcloud.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sidebar.md" beforeDir="false" afterPath="$PROJECT_DIR$/_sidebar.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zh-cn/api-gateway.md" beforeDir="false" afterPath="$PROJECT_DIR$/zh-cn/api-gateway.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zh-cn/boot.md" beforeDir="false" afterPath="$PROJECT_DIR$/zh-cn/boot.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zh-cn/changelog.md" beforeDir="false" afterPath="$PROJECT_DIR$/zh-cn/changelog.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zh-cn/config.md" beforeDir="false" afterPath="$PROJECT_DIR$/zh-cn/config.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zh-cn/consul-loadbalance.md" beforeDir="false" afterPath="$PROJECT_DIR$/zh-cn/consul-loadbalance.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zh-cn/consul-service-config.md" beforeDir="false" afterPath="$PROJECT_DIR$/zh-cn/consul-config.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zh-cn/consul-service.md" beforeDir="false" afterPath="$PROJECT_DIR$/zh-cn/consul-service.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zh-cn/consul.md" beforeDir="false" afterPath="$PROJECT_DIR$/zh-cn/consul.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zh-cn/feign.md" beforeDir="false" afterPath="$PROJECT_DIR$/zh-cn/feign.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zh-cn/logger.md" beforeDir="false" afterPath="$PROJECT_DIR$/zh-cn/logger.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zh-cn/nest.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zh-cn/schedule.md" beforeDir="false" afterPath="$PROJECT_DIR$/zh-cn/schedule.md" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -12,13 +31,22 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="28" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_sidebar.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="68">
-                <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+              <first_editor relative-caret-position="419">
+                <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
               </first_editor>
               <second_editor />
             </state>
@@ -26,11 +54,11 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/zh-cn/config.md">
+        <entry file="file://$PROJECT_DIR$/zh-cn/migrations.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="85">
-                <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+              <first_editor relative-caret-position="589">
+                <caret line="412" lean-forward="true" selection-start-line="412" selection-end-line="412" />
               </first_editor>
               <second_editor />
             </state>
@@ -38,16 +66,23 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/zh-cn/nest.md">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zh-cn/api-gateway.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="556">
-                <caret line="99" column="28" selection-start-line="99" selection-start-column="28" selection-end-line="99" selection-end-column="28" />
+              <first_editor relative-caret-position="1518">
+                <caret line="90" lean-forward="true" selection-start-line="90" selection-end-line="90" />
                 <folding>
-                  <element signature="e#0#43#0" expanded="true" />
                   <element signature="e#0#40#0" expanded="true" />
-                  <element signature="e#0#40#0" expanded="true" />
-                  <element signature="e#0#40#0" expanded="true" />
+                  <element signature="e#0#66#0" expanded="true" />
                 </folding>
               </first_editor>
               <second_editor />
@@ -55,21 +90,12 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
+        <entry file="file://$PROJECT_DIR$/zh-cn/consul.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="136">
-                <caret line="8" column="53" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
+              <first_editor relative-caret-position="326">
+                <caret line="27" column="2" selection-start-line="27" selection-start-column="2" selection-end-line="27" selection-end-column="2" />
               </first_editor>
               <second_editor />
             </state>
@@ -80,20 +106,8 @@
         <entry file="file://$PROJECT_DIR$/_coverpage.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="289">
-                <caret line="17" column="14" lean-forward="true" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/zh-cn/quickstart.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="204">
-                <caret line="12" selection-start-line="12" selection-end-line="12" />
+              <first_editor>
+                <caret column="22" lean-forward="true" selection-start-column="22" selection-end-column="22" />
               </first_editor>
               <second_editor />
             </state>
@@ -113,33 +127,82 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_media/who-used/yanrong.svg">
-          <provider selected="true" editor-type-id="images" />
+        <entry file="file://$PROJECT_DIR$/zh-cn/changelog.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="68">
+                <caret line="4" column="7" lean-forward="true" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_navbar.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="34">
+                <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>loadNavbar</find>
+      <find>#</find>
+      <find>##</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>##</replace>
+      <replace>###</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/zh-cn/boot.md" />
-        <option value="$PROJECT_DIR$/zh-cn/consul.md" />
-        <option value="$PROJECT_DIR$/zh-cn/consul-service.md" />
         <option value="$PROJECT_DIR$/zh-cn/consul-service-config.md" />
-        <option value="$PROJECT_DIR$/zh-cn/consul-loadbalance.md" />
-        <option value="$PROJECT_DIR$/zh-cn/feign.md" />
-        <option value="$PROJECT_DIR$/zh-cn/schedule.md" />
-        <option value="$PROJECT_DIR$/zh-cn/api-gateway.md" />
-        <option value="$PROJECT_DIR$/zh-cn/logger.md" />
         <option value="$PROJECT_DIR$/_media/who-used/yanrong.svg" />
         <option value="$PROJECT_DIR$/zh-cn/who-used.md" />
-        <option value="$PROJECT_DIR$/zh-cn/config.md" />
         <option value="$PROJECT_DIR$/zh-cn/quickstart.md" />
-        <option value="$PROJECT_DIR$/_sidebar.md" />
         <option value="$PROJECT_DIR$/zh-cn/nest.md" />
-        <option value="$PROJECT_DIR$/_coverpage.md" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/404.html" />
+        <option value="$PROJECT_DIR$/zh-cn/deploy-consul.md" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/docs.html" />
+        <option value="$PROJECT_DIR$/zh-cn/README.md" />
+        <option value="$PROJECT_DIR$/zh-cn/config.md" />
+        <option value="$PROJECT_DIR$/zh-cn/boot.md" />
+        <option value="$PROJECT_DIR$/zh-cn/consul-service.md" />
+        <option value="$PROJECT_DIR$/zh-cn/consul-config.md" />
+        <option value="$PROJECT_DIR$/zh-cn/consul-loadbalance.md" />
+        <option value="$PROJECT_DIR$/zh-cn/feign.md" />
+        <option value="$PROJECT_DIR$/zh-cn/logger.md" />
+        <option value="$PROJECT_DIR$/zh-cn/schedule.md" />
+        <option value="$PROJECT_DIR$/zh-cn/consul.md" />
+        <option value="$PROJECT_DIR$/zh-cn/api-gateway.md" />
+        <option value="$PROJECT_DIR$/_coverpage.md" />
+        <option value="$PROJECT_DIR$/zh-cn/migrations.md" />
+        <option value="$PROJECT_DIR$/_sidebar.md" />
+        <option value="$PROJECT_DIR$/zh-cn/changelog.md" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/_navbar.md" />
       </list>
     </option>
   </component>
@@ -147,12 +210,12 @@
     <option name="width" value="1680" />
     <option name="height" value="1050" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -163,33 +226,31 @@
             <path>
               <item name="nestcloud.org" type="b2602c69:ProjectViewProjectNode" />
               <item name="nestcloud.org" type="462c0819:PsiDirectoryNode" />
-              <item name="_media" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nestcloud.org" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nestcloud.org" type="462c0819:PsiDirectoryNode" />
               <item name="zh-cn" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/_media" />
+      <recent name="$PROJECT_DIR$/zh-cn" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/zh-cn" />
       <recent name="$PROJECT_DIR$/_media" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/zh-cn" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -215,23 +276,24 @@
       <option name="presentableId" value="Default" />
       <updated>1552637960639</updated>
       <workItem from="1552637962697" duration="5605000" />
+      <workItem from="1553146635398" duration="598000" />
+      <workItem from="1553243194457" duration="1985000" />
+      <workItem from="1553479209317" duration="1253000" />
+      <workItem from="1554016489802" duration="1463000" />
+      <workItem from="1554034707232" duration="6838000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5605000" />
+    <option name="totallyTimeSpent" value="19489000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24954791" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.32959184" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -239,6 +301,10 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32959184" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.3132653" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -246,36 +312,382 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/../nestcloud/packages/consul-loadbalance/rules/round-robin.rule.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/consul-loadbalance/rules/random.rule.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/consul-loadbalance/rules/index.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/consul-loadbalance/rules/weighted-response-time.rule.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/consul-loadbalance/rules/weighted-response-time.rule.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/consul-loadbalance/rules/random.rule.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/consul-loadbalance/rules/index.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/consul-loadbalance/rules/round-robin.rule.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/schedule/interfaces/schedule-options.interface.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/schedule/interfaces/base-options.interface.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/schedule/interfaces/base-options.interface.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/schedule/interfaces/cron-options.interface.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/schedule/interfaces/cron-options.interface.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/schedule/interfaces/schedule-options.interface.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/schedule/decorators/schedule.decorator.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/schedule/decorators/schedule.decorator.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/feign/exceptions/brake.exception.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/feign/exceptions/brake.exception.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/feign/utils/module.util.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/feign/utils/module.util.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/feign/utils/params.util.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/feign/utils/params.util.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/feign/utils/metadata.util.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/feign/utils/metadata.util.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/feign/interfaces/feign-options.interface.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/feign/interfaces/health-check.interface.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/feign/interfaces/feign-options.interface.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/feign/interfaces/fallback.interface.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/feign/interfaces/health-check.interface.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/feign/interfaces/interceptor.interface.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/feign/interfaces/global-axios-config.interface.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/feign/interfaces/global-axios-config.interface.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/feign/interfaces/interceptor.interface.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/feign/interfaces/brake-options.interface.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/feign/interfaces/brake-options.interface.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/feign/interfaces/fallback.interface.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/consul-config/exceptions/consul-config-sync.exception.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/consul-config/exceptions/consul-config-init.exception.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/consul-config/exceptions/consul-config-sync.exception.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/consul-config/exceptions/consul-config-init.exception.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/consul-config/interfaces/consul-config-options.interface.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/consul-config/interfaces/consul-config-options.interface.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/consul/decorators/inject-consul.decorator.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/consul/decorators/inject-consul.decorator.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/consul/decorators/watch-kv.decorator.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/consul/decorators/watch-kv.decorator.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/common/interfaces/loadbalancer.interface.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/common/interfaces/service-node.interface.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/common/interfaces/component.interface.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/common/interfaces/consul-service.interface.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/common/interfaces/server-state.interface.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/common/interfaces/component.interface.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/common/interfaces/logger.interface.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/common/interfaces/gateway.interface.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/common/interfaces/server.interface.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/common/interfaces/consul-kv-response.interface.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/common/interfaces/boot.interface.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/common/interfaces/server.interface.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/common/interfaces/loadbalancer.interface.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/common/interfaces/consul-config.interface.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/common/interfaces/memcached.interface.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/common/interfaces/consul-kv-response.interface.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/common/interfaces/logger.interface.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/common/interfaces/boot.interface.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/common/interfaces/loadbalance.interface.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/common/interfaces/memcached.interface.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/common/interfaces/consul-service.interface.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/common/interfaces/service-node.interface.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/common/interfaces/gateway.interface.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/common/interfaces/server-state.interface.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/common/interfaces/consul-config.interface.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/common/interfaces/loadbalance.interface.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/feign/decorators/loadbalanced.decorator.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/feign/decorators/config.decorator.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/feign/decorators/use-fallback.decorator.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/feign/decorators/loadbalanced.decorator.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/feign/decorators/use-interceptor.decorator.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/feign/decorators/response.decorator.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/feign/decorators/use-health-check.decorator.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/feign/decorators/config.decorator.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/feign/decorators/use-brakes.decorator.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/feign/decorators/use-fallback.decorator.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/feign/decorators/params.decorator.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/feign/decorators/use-brakes.decorator.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/feign/decorators/params.decorator.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/feign/decorators/response.decorator.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/feign/decorators/use-health-check.decorator.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/feign/decorators/request.decorator.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/feign/decorators/use-interceptor.decorator.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/feign/decorators/request.decorator.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/consul-loadbalance/exceptions/rule-init.exception.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/consul-loadbalance/exceptions/service-not-exist.exception.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/consul-loadbalance/exceptions/rule-init.exception.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/consul-loadbalance/exceptions/service-not-exist.exception.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/consul-loadbalance/exceptions/server-critical.exception.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/consul-loadbalance/exceptions/server-critical.exception.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/common/utils/transform.util.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/common/utils/transform.util.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/common/utils/provider.util.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/common/utils/provider.util.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/common/utils/metadata.util.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/common/utils/metadata.util.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/validations/IsIn.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/validations/IsDate.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/validations/IsNotEmpty.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/validations/MaxLength.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/validations/IsJSON.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/validations/IsNumber.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/validations/IsBoolean.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/validations/IsString.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/validations/Default.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/validations/IsDefined.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/validations/MinLength.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/validations/IsArray.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/validations/IsEmpty.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/validations/Trim.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/validations/IsURL.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/validations/NotEquals.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/validations/IsNotEmpty.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/validations/IsEmpty.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/validations/ValidationPipes.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/validations/IsEmail.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/validations/IsJSON.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/validations/IsDate.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/validations/Trim.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/validations/IsBoolean.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/validations/IsValid.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/validations/Min.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/validations/Max.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/validations/Default.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/validations/index.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/validations/MaxLength.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/validations/IsUUID.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/validations/IsNotIn.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/validations/IsURL.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/validations/Equals.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/validations/Length.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/validations/IsDefined.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/validations/Equals.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/validations/IsString.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/validations/NotEquals.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/validations/Length.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/validations/IsUUID.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/validations/IsInt.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/validations/Min.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/validations/IsNumber.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/validations/IsIP.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/validations/IsArray.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/validations/Max.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/validations/MinLength.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/validations/IsIn.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/validations/IsInt.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/validations/IsEmail.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/validations/IsNotIn.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/validations/index.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/validations/IsValid.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/validations/IsIP.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/validations/ValidationPipes.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/schedule/nest-distributed.schedule.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/schedule/constants.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/schedule/defaults.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/schedule/index.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/schedule/job.executor.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/schedule/constants.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/schedule/defaults.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/schedule/index.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/schedule/job.executor.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/schedule/nest.schedule.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/schedule/nest.schedule.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/schedule/nest-distributed.schedule.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/memcached/index.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/memcached/memcached.module.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/memcached/memcached.module.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/memcached/index.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/memcached/memcached.class.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/memcached/memcached.class.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/logger/logger.module.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/logger/index.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/logger/logger.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/logger/typeorm-logger.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/logger/typeorm-logger.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/logger/index.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/logger/logger.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/logger/nest-logger.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/logger/nest-logger.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/logger/logger.module.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/gateway/gateway.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/gateway/gateway.module.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/gateway/index.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/gateway/gateway.module.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/gateway/gateway.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/gateway/index.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/feign/constants.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/feign/feign.module.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/feign/constants.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/feign/hystrix.controller.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/feign/request.creator.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/feign/index.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/feign/request.creator.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/feign/http.client.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/feign/feign.module.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/feign/http.client.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/feign/hystrix.controller.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/feign/index.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/consul/consul.module.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/consul/consul.module.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/consul/index.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/consul/index.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/consul-service/service-node.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/consul-service/consul-service.class.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/consul-service/consul-service.module.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/consul-service/store.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/consul-service/consul-service.watcher.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/consul-service/index.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/consul-service/consul-service.class.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/consul-service/store.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/consul-service/consul-service.watcher.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/consul-service/consul-service.module.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/consul-service/index.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/consul-service/service-node.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/consul-loadbalance/loadbalance.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/consul-loadbalance/loadbalance.module.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/consul-loadbalance/server.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/consul-loadbalance/loadbalancer.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/consul-loadbalance/index.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/consul-loadbalance/loadbalancer.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/consul-loadbalance/loadbalance.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/consul-loadbalance/server-state.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/consul-loadbalance/http.delegate.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/consul-loadbalance/http.delegate.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/consul-loadbalance/index.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/consul-loadbalance/server.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/consul-loadbalance/loadbalance.module.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/consul-loadbalance/server-state.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/consul-config/index.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/consul-config/consul-config.class.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/consul-config/consul-config.class.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/consul-config/consul-config.module.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/consul-config/consul-config.module.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/consul-config/store.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/consul-config/index.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/consul-config/store.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/common/index.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/common/constants.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/common/index.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/common/cache.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/common/cache.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/common/constants.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/boot/index.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/boot/store.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/boot/boot.class.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/boot/boot.module.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/boot/store.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/boot/index.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/boot/boot.class.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/boot/boot.module.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/consul-service/decorators/inject-consul-service.decorator.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/consul-service/decorators/inject-consul-service.decorator.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/consul-service/interfaces/consul-service-check.interface.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/consul-service/interfaces/consul-service-options.interface.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/consul-service/interfaces/consul-service-check.interface.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/consul-service/interfaces/consul-service-options.interface.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/consul-service/utils/os.util.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/consul-service/utils/array.util.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/consul-service/utils/os.util.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/consul-service/utils/service.util.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/consul-service/utils/service.util.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/consul-service/utils/array.util.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/consul-config/decorators/config-value.decorator.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/consul-config/decorators/config-value.decorator.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/consul-config/decorators/inject.consul-config.decorator.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/consul-config/decorators/inject.consul-config.decorator.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/consul-loadbalance/decorators/choose.decorator.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/consul-loadbalance/decorators/inject-loadbalance.decorator.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/consul-loadbalance/decorators/choose.decorator.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/consul-loadbalance/decorators/inject-loadbalance.decorator.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/consul-loadbalance/interfaces/loadbalance-options.interface.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/consul-loadbalance/interfaces/loadbalancer-options.interface.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/consul-loadbalance/interfaces/rule.interface.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/consul-loadbalance/interfaces/rule-options.interface.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/consul-loadbalance/interfaces/rule-options.interface.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/consul-loadbalance/interfaces/loadbalance-options.interface.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/consul-loadbalance/interfaces/rule.interface.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/consul-loadbalance/interfaces/loadbalancer-options.interface.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/boot/decorators/inject-boot.decorator.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/boot/decorators/boot-value.decorator.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/boot/decorators/inject-boot.decorator.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/boot/decorators/boot-value.decorator.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/gateway/decorators/inject-gateway.decorator.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/gateway/decorators/inject-gateway.decorator.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/gateway/interfaces/route.interface.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/gateway/interfaces/gateway-options.interface.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/gateway/interfaces/proxy-options.interface.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/gateway/interfaces/proxy-options.interface.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/gateway/interfaces/route.interface.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/gateway/interfaces/gateway-options.interface.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/logger/decorators/inject-logger.decorator.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/logger/decorators/inject-logger.decorator.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/logger/interfaces/transport.interface.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/logger/interfaces/transport.interface.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/logger/interfaces/logger-options.interface.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/logger/interfaces/logger-options.interface.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/memcached/decorators/inject-memcached.decorator.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/memcached/decorators/inject-memcached.decorator.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/memcached/interfaces/memcached-options.interface.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/memcached/interfaces/memcached-options.interface.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/consul/interfaces/consul-options.interface.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/consul/interfaces/consul-options.interface.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/core/global.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/core/nestcloud.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/core/nestcloud.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/core/index.js" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/core/global.d.ts" />
+        <option value="$PROJECT_DIR$/../nestcloud/packages/core/index.d.ts" />
+      </list>
+    </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/zh-cn/SUMMARY.md">
+    <entry file="file://$PROJECT_DIR$/zh-cn/SUMMARY.md" />
+    <entry file="file://$PROJECT_DIR$/_media/who-used/yanrong.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zh-cn/README.md" />
+    <entry file="file://$PROJECT_DIR$/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/404.html" />
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" selection-start-column="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CNAME">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zh-cn/nest.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor>
-            <caret selection-end-line="11" selection-end-column="27" />
+          <first_editor relative-caret-position="573">
+            <caret line="99" column="28" selection-start-line="99" selection-start-column="28" selection-end-line="99" selection-end-column="28" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/zh-cn/consul.md">
+    <entry file="file://$PROJECT_DIR$/zh-cn/deploy-consul.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="1360">
-            <caret line="80" column="19" selection-start-line="80" selection-start-column="19" selection-end-line="80" selection-end-column="19" />
-            <folding>
-              <element signature="e#0#40#0" expanded="true" />
-              <element signature="e#0#44#0" expanded="true" />
-            </folding>
+          <first_editor relative-caret-position="573">
+            <caret line="39" column="22" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="23" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/zh-cn/changelog.md">
+    <entry file="file://$PROJECT_DIR$/zh-cn/config.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor />
+          <first_editor relative-caret-position="1071">
+            <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
+          </first_editor>
           <second_editor />
         </state>
       </provider>
@@ -283,12 +695,12 @@
     <entry file="file://$PROJECT_DIR$/zh-cn/boot.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="34">
-            <caret line="2" column="50" selection-start-line="2" selection-start-column="50" selection-end-line="2" selection-end-column="50" />
+          <first_editor relative-caret-position="2720">
+            <caret line="160" lean-forward="true" selection-start-line="160" selection-end-line="160" />
             <folding>
-              <element signature="e#0#50#0" expanded="true" />
-              <element signature="e#0#42#0" expanded="true" />
-              <element signature="e#0#42#0" expanded="true" />
+              <element signature="e#0#52#0" expanded="true" />
+              <element signature="e#0#44#0" expanded="true" />
+              <element signature="e#0#44#0" expanded="true" />
             </folding>
           </first_editor>
           <second_editor />
@@ -298,8 +710,8 @@
     <entry file="file://$PROJECT_DIR$/zh-cn/consul-service.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="403">
-            <caret line="113" column="6" selection-start-line="113" selection-start-column="6" selection-end-line="113" selection-end-column="6" />
+          <first_editor relative-caret-position="573">
+            <caret line="180" lean-forward="true" selection-start-line="180" selection-end-line="180" />
             <folding>
               <element signature="e#0#40#0" expanded="true" />
               <element signature="e#0#44#0" expanded="true" />
@@ -309,15 +721,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/zh-cn/consul-service-config.md">
+    <entry file="file://$PROJECT_DIR$/zh-cn/consul-config.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-141">
-            <caret line="89" column="88" selection-start-line="89" selection-start-column="88" selection-end-line="89" selection-end-column="88" />
+          <first_editor relative-caret-position="573">
+            <caret line="136" lean-forward="true" selection-start-line="136" selection-end-line="136" />
             <folding>
               <element signature="e#0#40#0" expanded="true" />
-              <element signature="e#0#42#0" expanded="true" />
-              <element signature="e#0#42#0" expanded="true" />
+              <element signature="e#0#44#0" expanded="true" />
+              <element signature="e#0#44#0" expanded="true" />
             </folding>
           </first_editor>
           <second_editor />
@@ -327,42 +739,12 @@
     <entry file="file://$PROJECT_DIR$/zh-cn/consul-loadbalance.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-124">
-            <caret line="77" column="20" selection-start-line="77" selection-start-column="20" selection-end-line="77" selection-end-column="20" />
+          <first_editor relative-caret-position="573">
+            <caret line="139" lean-forward="true" selection-start-line="139" selection-end-line="139" />
             <folding>
               <element signature="e#0#40#0" expanded="true" />
               <element signature="e#0#44#0" expanded="true" />
-            </folding>
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zh-cn/schedule.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-991">
-            <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
-            <folding>
               <element signature="e#0#44#0" expanded="true" />
-              <element signature="e#0#44#0" expanded="true" />
-              <element signature="e#0#47#0" expanded="true" />
-            </folding>
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zh-cn/api-gateway.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-73">
-            <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
-            <folding>
-              <element signature="e#0#40#0" expanded="true" />
-              <element signature="e#0#40#0" expanded="true" />
-              <element signature="e#0#40#0" expanded="true" />
-              <element signature="e#0#66#0" expanded="true" />
             </folding>
           </first_editor>
           <second_editor />
@@ -372,12 +754,16 @@
     <entry file="file://$PROJECT_DIR$/zh-cn/feign.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor>
-            <caret selection-end-column="10" />
+          <first_editor relative-caret-position="573">
+            <caret line="297" lean-forward="true" selection-start-line="297" selection-end-line="297" />
             <folding>
               <element signature="e#0#40#0" expanded="true" />
               <element signature="e#0#44#0" expanded="true" />
+              <element signature="e#0#44#0" expanded="true" />
+              <element signature="e#0#45#0" expanded="true" />
               <element signature="e#0#48#0" expanded="true" />
+              <element signature="e#0#44#0" expanded="true" />
+              <element signature="e#0#44#0" expanded="true" />
               <element signature="e#0#44#0" expanded="true" />
             </folding>
           </first_editor>
@@ -388,37 +774,14 @@
     <entry file="file://$PROJECT_DIR$/zh-cn/logger.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-192">
-            <caret line="69" column="1" selection-start-line="69" selection-start-column="1" selection-end-line="69" selection-end-column="1" />
+          <first_editor relative-caret-position="573">
+            <caret line="102" lean-forward="true" selection-start-line="102" selection-end-line="102" />
             <folding>
-              <element signature="e#0#40#0" expanded="true" />
-              <element signature="e#0#44#0" expanded="true" />
               <element signature="e#0#42#0" expanded="true" />
               <element signature="e#0#40#0" expanded="true" />
+              <element signature="e#0#44#0" expanded="true" />
+              <element signature="e#0#40#0" expanded="true" />
             </folding>
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_media/who-used/yanrong.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zh-cn/who-used.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="153">
-            <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zh-cn/config.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="85">
-            <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
           </first_editor>
           <second_editor />
         </state>
@@ -434,25 +797,79 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_sidebar.md">
+    <entry file="file://$PROJECT_DIR$/zh-cn/schedule.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="68">
-            <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+          <first_editor relative-caret-position="573">
+            <caret line="140" lean-forward="true" selection-start-line="140" selection-end-line="140" />
+            <folding>
+              <element signature="e#0#44#0" expanded="true" />
+              <element signature="e#0#44#0" expanded="true" />
+              <element signature="e#0#47#0" expanded="true" />
+            </folding>
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/zh-cn/nest.md">
+    <entry file="file://$PROJECT_DIR$/zh-cn/who-used.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="556">
-            <caret line="99" column="28" selection-start-line="99" selection-start-column="28" selection-end-line="99" selection-end-column="28" />
+          <first_editor relative-caret-position="153">
+            <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zh-cn/consul.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="326">
+            <caret line="27" column="2" selection-start-line="27" selection-start-column="2" selection-end-line="27" selection-end-column="2" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zh-cn/api-gateway.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="1518">
+            <caret line="90" lean-forward="true" selection-start-line="90" selection-end-line="90" />
+            <folding>
+              <element signature="e#0#40#0" expanded="true" />
+              <element signature="e#0#66#0" expanded="true" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zh-cn/migrations.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="589">
+            <caret line="412" lean-forward="true" selection-start-line="412" selection-end-line="412" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zh-cn/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-719">
+            <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
             <folding>
               <element signature="e#0#43#0" expanded="true" />
-              <element signature="e#0#40#0" expanded="true" />
-              <element signature="e#0#40#0" expanded="true" />
               <element signature="e#0#40#0" expanded="true" />
             </folding>
           </first_editor>
@@ -463,28 +880,28 @@
     <entry file="file://$PROJECT_DIR$/_coverpage.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="289">
-            <caret line="17" column="14" lean-forward="true" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+          <first_editor>
+            <caret column="22" lean-forward="true" selection-start-column="22" selection-end-column="22" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/zh-cn/README.md">
+    <entry file="file://$PROJECT_DIR$/_sidebar.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="255">
-            <caret line="15" lean-forward="true" selection-end-line="28" />
+          <first_editor relative-caret-position="419">
+            <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/zh-cn/changelog.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="136">
-            <caret line="8" column="53" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
+          <first_editor relative-caret-position="68">
+            <caret line="4" column="7" lean-forward="true" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
           </first_editor>
           <second_editor />
         </state>
@@ -492,8 +909,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+        <state relative-caret-position="255">
+          <caret line="15" column="28" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_navbar.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="34">
+            <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

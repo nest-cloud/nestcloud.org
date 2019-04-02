@@ -5,15 +5,13 @@ Logger 提供日志功能，基于 winston@2 实现。
 ## 安装
 
 ```bash
-npm install @nestcloud/logger --save
-npm install @types/winton --save-dev
+npm install winston@2 @nestcloud/logger@next --save
 ```
 
 ## 使用
 
 ```typescript
 import { NestFactory } from '@nestjs/core'
-import { Injectable } from '@nestjs/core';
 import { NestLogger, Logger } from '@nestcloud/logger';
 import { AppModule } from './app.module';
 
@@ -69,11 +67,11 @@ export class ApplicationModule {}
 ```typescript
 import { Injectable } from '@nestjs/common';
 import { InjectLogger, Logger } from '@nestcloud/logger';
-import { LoggerInstance } from 'winston';
+import { ILogger } from '@nestcloud/common';
 
 @Injectable()
 export class TestService {
-  constructor(@InjectLogger() private readonly logger: LoggerInstance) {}
+  constructor(@InjectLogger() private readonly logger: ILogger) {}
 
   log() {
       this.logger.info('The first log');

@@ -5,7 +5,7 @@ Consul 是对 consul api 的封装，基于 node-consul，是服务发现和负�
 ## 安装
 
 ```bash
-npm install consul @nestcloud/consul --save
+npm install consul @nestcloud/consul@next --save
 ```
 
 ## 注册模块
@@ -25,7 +25,7 @@ import { NEST_BOOT } from '@nestcloud/common';
 export class ApplicationModule {}
 ```
 
-## Boot 配置
+## 配置
 
 ```yaml
 consul:
@@ -48,15 +48,15 @@ export class TestService {
 }
 ```
 
-## @ConsulKV Decorator
+## @WatchKV Decorator
 
-ConsulKV 装饰器可以很方便的获取 Consul KV 中的数据，并且支持 Consul watch 功能，无需手动 watch。
+WatchKV 装饰器可以很方便的获取 Consul KV 中的数据，并且支持 Consul watch 功能，无需手动 watch。
 
 ```typescript
-import { ConsulKV } from '@nestcloud/consul';
+import { WatchKV } from '@nestcloud/consul';
 
 export class TestService {
-    @ConsulKV('config_key', 'yaml', { port: 3000 })
+    @WatchKV('config_key', 'yaml', { port: 3000 })
     private readonly config: any;
 }
 ```

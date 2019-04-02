@@ -5,7 +5,7 @@ Feign 是支持负载均衡和装饰器的 http 客户端，使用更加简单�
 ## 安装
 
 ```bash
-npm install @nestcloud/feign --save
+npm install @nestcloud/feign@next --save
 ```
 
 ## 注册模块
@@ -25,27 +25,33 @@ import { NEST_BOOT, NEST_CONSUL_LOADBALANCE } from '@nestcloud/common';
       BootModule.register(__dirname, 'bootstrap.yml'),
       ConsulServiceModule.register({ dependencies: [NEST_BOOT] }),
       LoadbalanceModule.register({ dependencies: [NEST_BOOT] }),
-      FeignModule.register({ dependencies: [NEST_CONSUL_LOADBALANCE] }),
+      FeignModule.register({ dependencies: [NEST_BOOT, NEST_CONSUL_LOADBALANCE] }), // or NEST_CONSUL_CONFIG
   ],
 })
 export class ApplicationModule {}
+```
+
+## 配置
+
+```yaml
+feign:
+  axios:
+    timeout: 1000
 ```
 
 ## 如何使用
 
 ```typescript
 import { Injectable } from "@nestjs/common";
-import { Loadbalanced, Get, Query, Post, Body, Param, Put, Delete } from "@nestcloud/feign";
+import { Get, Query, Post, Body, Param, Put, Delete } from "@nestcloud/feign";
 
 @Injectable()
-@Loadbalanced('user-service') // 开启负载均衡支持
 export class UserClient {
     @Get('/users')
     getUsers(@Query('role') role: string) {
     }
     
     @Get('http://test.com/users')
-    @Loadbalanced(false) // 关闭负载均衡支持
     getRemoteUsers() {
     }
     
@@ -64,7 +70,165 @@ export class UserClient {
 }
 ```
 
+### 负载均衡
+
+```typescript
+import { Injectable } from "@nestjs/common";
+import { Loadbalanced, Get, Query } from "@nestcloud/feign";
+
+@Injectable()
+@Loadbalanced('user-service') // 开启负载均衡支持，需要依赖 @nestcloud/consul-loadbalance 模块
+export class UserClient {
+    @Get('/users')
+    getUsers(@Query('role') role: string) {
+    }
+    
+    @Get('http://test.com/users')
+    @Loadbalanced(false) // 关闭负载均衡支持
+    getRemoteUsers() {
+    }
+}
+```
+
+### 熔断器
+
+```typescript
+import { IFallback } from "@nestcloud/feign";
+import { Injectable, ServiceUnavailableException } from "@nestjs/common";
+import { AxiosResponse } from "axios";
+
+@Injectable()
+export class CustomFallback implements IFallback {
+    fallback(): Promise<AxiosResponse | void> | AxiosResponse | void {
+        throw new ServiceUnavailableException('The service is unavailable, please retry soon.');
+    }
+}
+```
+
+```typescript
+import { IHealthCheck } from "@nestcloud/feign";
+import { Injectable } from "@nestjs/common";
+import { HealthClient } from "./health.client";
+
+@Injectable()
+export class CustomCheck implements IHealthCheck {
+    constructor(
+        private readonly client: HealthClient
+    ) {
+    }
+
+    async check(): Promise<void> {
+        await this.client.checkHealth();
+    }
+}
+
+```
+
+```typescript
+import { Injectable } from "@nestjs/common";
+import { UseBrakes, UseFallback, UseHealthCheck, Get, Query } from "@nestcloud/feign";
+import { CustomFallback } from "./custom.fallback";
+import { CustomCheck } from "./custom.check";
+
+@Injectable()
+@UseBrakes({
+    statInterval: 2500,
+    threshold: 0.5,
+    circuitDuration: 15000,
+    timeout: 250,
+    healthCheck: true,
+})
+@UseFallback(CustomFallback)
+@UseHealthCheck(CustomCheck)
+export class UserClient {
+}
+```
+
+### 拦截器
+
+AddHeaderInterceptor.ts
+
+```typescript
+import { Injectable } from '@nestjs/common';
+import { IInterceptor } from "@nestcloud/feign";
+import { AxiosResponse, AxiosRequestConfig } from 'axios';
+
+@Injectable()
+export class AddHeaderInterceptor implements IInterceptor {
+    onRequest(request: AxiosRequestConfig): AxiosRequestConfig {
+        request.headers['x-service'] = 'service-name';
+        return request;
+    }
+    
+    onResponse(response: AxiosResponse): AxiosResponse {
+        return response;
+    }
+    
+    onRequestError(error: any): any {
+        return Promise.reject(error);
+    }
+    
+    onResponseError(error: any): any {
+        return Promise.reject(error);
+    }
+}
+```
+
+ArticleClient.ts
+
+```typescript
+import { Injectable } from "@nestjs/common";
+import { Get, UseInterceptor } from "@nestcloud/feign";
+import { AddHeaderInterceptor } from "./middlewares/AddHeaderInterceptor";
+
+@Injectable()
+@UseInterceptor(AddHeaderInterceptor)
+export class ArticleClient {
+    @Get('https://api.apiopen.top/recommendPoetry')
+    getArticles() {
+    }
+}
+```
+
+中间件执行过程：
+
+```typescript
+@UseInterceptor(Interceptor1)
+@UseInterceptor(Interceptor2)
+export class Client {
+
+    @UseInterceptor(Interceptor3)
+    @UseInterceptor(Interceptor4)
+    getArticles() {
+    }
+}
+```
+
+执行结果：
+
+```text
+interceptor1 request
+interceptor2 request
+interceptor3 request
+interceptor4 request
+interceptor4 response
+interceptor3 response
+interceptor2 response
+interceptor1 response
+```
+
 ## API 文档
+
+### class FeignModule
+
+#### static register\(options: IFeignOptions\): DynamicModule
+
+注册 feign 模块
+
+| field | type | description |
+| :--- | :--- | :--- |
+| options.dependencies | string\[\] | 如果 dependencies 设置为 \[NEST\_BOOT\]，则通过 @nestcloud/boot 模块加载配置，如果设置为 \[NEST_CONSUL_CONFIG\] 则通过 @nestcloud/consul-config 加载配置，并支持动态更新 |
+| options.axiosConfig | IGlobalAxiosConfig | axios 全局配置 |
 
 ### Get\|Post\|Put\|Delete\|Options\|Head\|Patch\|Trace\(uri: string, options?: AxiosRequestConfig\): MethodDecorator
 
@@ -114,80 +278,20 @@ export class UserClient {
 
 ### Loadbalanced\(service: string \| boolean\): ClassDecorator \| MethodDecorator
 
-开启或者关闭负载均衡支持
+开启或者关闭负载均衡支持，使用负载均衡需要依赖 @nestcloud/consul-loadbalance 模块。
 
-### Interceptor&lt;T extends IInterceptor&gt;\(interceptor: { new\(\): T }\)
+### UseInterceptor\(interceptor: IInterceptor | Function\)
 
-添加拦截器，例如：
+使用拦截器，Interceptor 与 NestJS Interceptor 相同，支持动态引入以及依赖注入。
 
-AddHeaderInterceptor.ts
+### UseBrakes\(config?: boolean | IBrakesConfig\): ClassDecorator | MethodDecorator
 
-```typescript
-import { IInterceptor } from "@nestcloud/feign";
-import { AxiosResponse, AxiosRequestConfig } from 'axios';
+开启熔断器，如果设置为 false，则禁用熔断器
 
-export class AddHeaderInterceptor implements IInterceptor {
-    onRequest(request: AxiosRequestConfig): AxiosRequestConfig {
-        request.headers['x-service'] = 'service-name';
-        return request;
-    }
-    
-    onResponse(response: AxiosResponse): AxiosResponse {
-        return response;
-    }
-    
-    onRequestError(error: any): any {
-        return Promise.reject(error);
-    }
-    
-    onResponseError(error: any): any {
-        return Promise.reject(error);
-    }
-}
-```
+### UseFallback\(Fallback: Function \| IFallback\): ClassDecorator | MethodDecorator
 
-ArticleClient.ts
+为熔断器设置 Fallback，与 UseBrakes 装饰器一起使用，Fallback 与 NestJS Interceptor 相同，支持动态引入以及依赖注入。
 
-```typescript
-import { Injectable } from "@nestjs/common";
-import { Get, Interceptor } from "@nestcloud/feign";
-import { AddHeaderInterceptor } from "./middlewares/AddHeaderInterceptor";
+### UseHealthCheck\(Fallback: Function \| IHealthCheck\): ClassDecorator | MethodDecorator
 
-@Injectable()
-@Interceptor(AddHeaderInterceptor)
-export class ArticleClient {
-    @Get('https://api.apiopen.top/recommendPoetry')
-    getArticles() {
-    }
-}
-```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
-
-中间件执行过程：
-
-```typescript
-@Interceptor(Interceptor1)
-@Interceptor(Interceptor2)
-export class Client {
-
-    @Interceptor(Interceptor3)
-    @Interceptor(Interceptor4)
-    getArticles() {
-    }
-}
-```
-
-执行结果：
-
-```text
-interceptor1 request
-interceptor2 request
-interceptor3 request
-interceptor4 request
-interceptor4 response
-interceptor3 response
-interceptor2 response
-interceptor1 response
-```
-
+为熔断器设置 HealthCheck，与 HealthCheck 装饰器一起使用，Fallback 与 NestJS Interceptor 相同，支持动态引入以及依赖注入。

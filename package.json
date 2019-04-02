@@ -1,0 +1,22 @@
+{
+  "name": "nestcloud.org",
+  "version": "0.2.0",
+  "description": "NestCloud 是一套以 consul 作为服务注册与发现中心，基于 Nest.js 的微服务解决方案。使用 NestCloud 可以快速构建 Node 微服务程序。",
+  "main": "index.js",
+  "scripts": {
+    "start": "docsify serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nest-cloud/nestcloud.org.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nest-cloud/nestcloud.org/issues"
+  },
+  "homepage": "https://github.com/nest-cloud/nestcloud.org#readme",
+  "dependencies": {
+    "docsify": "^4.9.1"
+  }
+}
