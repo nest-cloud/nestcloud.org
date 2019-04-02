@@ -1,4 +1,4 @@
-- 快速开始
+- 快速开始 0.2.3
   - [如何使用NestCloud](zh-cn/README.md)
   
 - 指南
