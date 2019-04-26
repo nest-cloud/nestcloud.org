@@ -24,7 +24,7 @@
 
 ![logo](_media/nestcloud.png)
 
-# NestCloud <small>0.2.3</small>
+# NestCloud <small>0.2.4</small>
 
 > A MicroService Solution.
 

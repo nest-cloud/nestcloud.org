@@ -15,6 +15,7 @@
   - [配置中心 (Consul-Config)](zh-cn/consul-config.md)
   - [负载均衡 (Consul-Loadbalance)](zh-cn/consul-loadbalance.md)
   - [Http客户端 (Feign)](zh-cn/feign.md)
+  - [Grpc远程调用 (Grpc)](zh-cn/grpc)
   - [定时任务 (Schedule)](zh-cn/schedule.md)
   - [Api网关 (Gateway)](zh-cn/api-gateway.md)
   - [日志 (Logger)](zh-cn/logger.md)
