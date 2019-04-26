@@ -31,7 +31,7 @@ export class HeroController {
 
     @Get()
     async execute(): Promise<any> {
-        return await this.heroService.findOne({ id: 1 }).toPromise();
+        return await this.heroService.get({ id: 1 }).toPromise();
     }
 }
 ```
