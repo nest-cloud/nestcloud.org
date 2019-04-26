@@ -51,9 +51,14 @@ Consul 模块
 软件实现的负载均衡，主要为 http 调用提供服务。
 
 
-### [Feign](packages/feign)
+### [Feign](zh-cn/feign.md)
 
 Http 客户端，支持负载均衡并且支持用 Decorator 编写。
+
+
+### [Grpc](zh-cn/grpc.md)
+
+提供 Grpc，并且支持负载均衡。
 
 
 ### [Memcached](zh-cn/memcached.md)
