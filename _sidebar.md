@@ -1,4 +1,4 @@
-- 快速开始 0.2.4
+- 快速开始 0.3.7
   - [如何使用NestCloud](zh-cn/README.md)
   
 - 指南
@@ -19,6 +19,7 @@
   - [定时任务 (Schedule)](zh-cn/schedule.md)
   - [Api网关 (Gateway)](zh-cn/api-gateway.md)
   - [日志 (Logger)](zh-cn/logger.md)
+  - [权限访问控制 (Rbac)](zh-cn/rbac.md)
 
 - 发现
   

@@ -20,7 +20,7 @@
 ## 安装
 
 ```bash
-npm install --save @nestcloud/core@next @nestcloud/common@next @nestcloud/boot@next @nestcloud/consul@next @nestcloud/consul-service@next @nestcloud/consul-config@next @nestcloud/consul-loadbalance@next @nestcloud/feign@next @nestcloud/logger@next @nestcloud/schedule@next 
+npm install --save @nestcloud/core @nestcloud/common @nestcloud/boot @nestcloud/consul @nestcloud/consul-service @nestcloud/consul-config @nestcloud/consul-loadbalance @nestcloud/feign @nestcloud/logger @nestcloud/schedule 
 ```
 
 

@@ -1,5 +1,51 @@
 # Change Log
 
+## 0.3.7
+
+### Global
+
+Update NestCloud dependencies.
+
+### Consul Loadbalance
+
+Fix make server node status unavailable when someone node is down and consul cluster is crashed.
+
+### Gateway
+
+Fix make server node status unavailable when someone node is down and consul cluster is crashed.
+
+
+## 0.3.4
+
+### Core
+
+bug fix
+
+### Logger
+
+bug fix
+
+
+## 0.2.4
+
+### Core
+1. Fixes NestFactory.createMicroservice or NestFactory.createApplicationContext type error
+
+### Consul Loadbalance
+1. Fixes server state reset when refresh services and servers
+
+### Schedule
+
+1. Supports dynamic schedule job
+2. Uses NestJS dynamic module register
+3. New UseLocker decorator
+4. The Locker supports dependency injection, if use NestCloud.
+
+# Grpc
+
+A new component for loadbalance rpc invoke.
+
+
 ## 0.2.3
 
 ### All

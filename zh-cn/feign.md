@@ -5,7 +5,7 @@ Feign 是支持负载均衡和装饰器的 http 客户端，使用更加简单�
 ## 安装
 
 ```bash
-npm install @nestcloud/feign@next --save
+npm install @nestcloud/feign --save
 ```
 
 ## 注册模块

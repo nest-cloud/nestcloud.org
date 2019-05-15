@@ -5,7 +5,7 @@ Consul-Loadbalance 提供本地负载均衡功能，目前支持的负载均衡�
 ## 安装
 
 ```bash
-npm install consul @nestcloud/consul@next @nestcloud/consul-service@next @nestcloud/consul-loadbalance@next --save
+npm install consul @nestcloud/consul @nestcloud/consul-service @nestcloud/consul-loadbalance --save
 ```
 
 ## 注册模块

@@ -5,7 +5,7 @@ Gateway 是基于 http-proxy 实现的一个简单 API 网关
 ## 安装
 
 ```bash
-npm install @nestcloud/gateway@next --save
+npm install @nestcloud/gateway --save
 ```
 
 ## 注册模块
