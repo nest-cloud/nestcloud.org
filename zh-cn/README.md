@@ -79,6 +79,9 @@ Memcached 模块。
 
 Http 请求参数验证模块。
 
+### [Rbac](zh-cn/rbac.md)
+
+基于角色的动态权限访问控制
 
 ## 快速开始
 

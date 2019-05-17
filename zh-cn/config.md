@@ -16,9 +16,8 @@ consul:
     name: service
     port: 3000
   config:
-    # 如果服务名字是 user-service 并且 env 是 production，
-    # 则 consul kv 中 key 为 config__user-service__production
-    key: config__{serviceName}__{env}
+    # 表达式支持获取yaml以及系统变量中的数据
+    key: config__${{ consul.service.name }}__${{ NODE_ENV }}
     retry: 5
 
 # 支持通过 consul-config 加载
