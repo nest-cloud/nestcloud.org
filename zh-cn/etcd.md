@@ -2,7 +2,7 @@
 
 ## 安装
 
-```shell script
+```shell
 $ npm i --save @nestcloud/etcd etcd3
 ```
 

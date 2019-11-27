@@ -2,13 +2,13 @@
 
 ## nestcloud-consul-starter
 
-```shell script
+```shell
 git clone https://github.com/nest-cloud/nestcloud-consul-starter.git your-project-name
 ```
 
 ## nestcloud-etcd-starter
 
-```shell script
+```shell
 git clone https://github.com/nest-cloud/nestcloud-etcd-starter.git your-project-name
 ```
 
