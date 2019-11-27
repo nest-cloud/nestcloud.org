@@ -18,9 +18,9 @@
 基于 Consul 的 NodeJS 微服务解决方案，各组件使用 Typescript 语言 和 NestJS 框架编写。
 
 
-## Install
+## 安装
 
-### Consul Backend
+### Consul
 
 ```bash
 $ npm install --save @nestcloud/core
@@ -34,7 +34,7 @@ $ npm install --save @nestcloud/feign
 $ npm install --save @nestcloud/logger 
 ```
 
-### Etcd Backend
+### Etcd
 
 ```bash
 $ npm install --save @nestcloud/core
@@ -48,7 +48,7 @@ $ npm install --save @nestcloud/feign
 $ npm install --save @nestcloud/logger 
 ```
 
-### Kubernetes Backend
+### Kubernetes
 
 ```bash
 $ npm install --save @nestcloud/core
@@ -60,22 +60,6 @@ $ npm install --save @nestcloud/feign
 $ npm install --save @nestcloud/logger 
 $ npm install --save @nestcloud/kubernetes 
 ```
-
-## Examples
-
-[nestcloud-typeorm-example](https://github.com/nest-cloud/nestcloud-typeorm-example)
-
-[nestcloud-grpc-example](https://github.com/nest-cloud/nestcloud-grpc-example)
-
-[nestcloud-kubernetes-example](https://github.com/nest-cloud/nestcloud-kubernetes-example)
-
-
-## Starter
-
-[nestcloud-consul-starter](https://github.com/nest-cloud/nestcloud-consul-starter) 
-
-[nestcloud-etcd-starter](https://github.com/nest-cloud/nestcloud-etcd-starter) 
-
 
 ## Components
 
