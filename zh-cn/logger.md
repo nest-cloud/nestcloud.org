@@ -12,7 +12,7 @@ npm install winston@2 @nestcloud/logger --save
 
 ```typescript
 import { NestFactory } from '@nestjs/core'
-import { NestLogger, Logger } from '@nestcloud/logger';
+import { NestLogger } from '@nestcloud/logger';
 import { AppModule } from './app.module';
 
 async function bootstrap() {
@@ -54,7 +54,7 @@ logger:
 
 ```typescript
 import { Module } from '@nestjs/common';
-import { LoggerModule, Logger } from '@nestcloud/logger';
+import { LoggerModule } from '@nestcloud/logger';
 
 @Module({
   imports: [
@@ -67,11 +67,10 @@ export class ApplicationModule {}
 ```typescript
 import { Injectable } from '@nestjs/common';
 import { InjectLogger, Logger } from '@nestcloud/logger';
-import { ILogger } from '@nestcloud/common';
 
 @Injectable()
 export class TestService {
-  constructor(@InjectLogger() private readonly logger: ILogger) {}
+  constructor(@InjectLogger() private readonly logger: Logger) {}
 
   log() {
       this.logger.info('The first log');

@@ -157,41 +157,6 @@ export class ScheduleService extends NestSchedule {
 }
 ```
 
-### 自定义日志
-
-默认使用 console，如果需要自定义日志，需要实现 NestJS 的 LoggerService 接口
-
-```typescript
-import { Module } from '@nestjs/common';
-import { ScheduleModule } from '@nestcloud/schedule';
-import { LoggerService } from '@nestjs/common';
-
-export class NestLogger implements LoggerService {
-    log(message: string): any {
-        console.log(message);
-    }
-
-    error(message: string, trace: string): any {
-        console.error(message, trace);
-    }
-
-    warn(message: string): any {
-        console.warn(message);
-    }
-}
-
-@Module({
-  imports: [
-    ScheduleModule.register({
-      logger: new NestLogger(),
-    }),
-  ]
-})
-export class AppModule {
-}
-```
-
-
 ## API
 
 ### class ScheduleModule
@@ -205,7 +170,6 @@ export class AppModule {
 | config.enable | boolean | false | 启用/禁用调度器，默认启用 |
 | config.maxRetry | number | false |  重试次数，默认 -1 不重试 |
 | config.retryInterval | number | false | 重试间隔，默认 5s |
-| config.logger | LoggerService \| boolean | false | 自定义日志，默认为 console |
 
 ### class Schedule
 

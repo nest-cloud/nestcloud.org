@@ -13,19 +13,19 @@ npm install @nestcloud/feign --save
 ```typescript
 import { Module } from '@nestjs/common';
 import { ConsulModule } from '@nestcloud/consul';
-import { ConsulServiceModule } from '@nestcloud/consul-service';
-import { LoadbalanceModule } from '@nestcloud/consul-loadbalance';
+import { ServiceModule } from '@nestcloud/service';
+import { LoadbalanceModule } from '@nestcloud/loadbalance';
 import { BootModule } from '@nestcloud/boot';
 import { FeignModule } from '@nestcloud/feign';
-import { NEST_BOOT, NEST_CONSUL_LOADBALANCE } from '@nestcloud/common';
+import { NEST_BOOT, NEST_LOADBALANCE } from '@nestcloud/common';
 
 @Module({
   imports: [
       ConsulModule.register({dependencies: [NEST_BOOT]}),
       BootModule.register(__dirname, 'bootstrap.yml'),
-      ConsulServiceModule.register({ dependencies: [NEST_BOOT] }),
+      ServiceModule.register({ dependencies: [NEST_BOOT] }),
       LoadbalanceModule.register({ dependencies: [NEST_BOOT] }),
-      FeignModule.register({ dependencies: [NEST_BOOT, NEST_CONSUL_LOADBALANCE] }), // or NEST_CONSUL_CONFIG
+      FeignModule.register({ dependencies: [NEST_BOOT, NEST_LOADBALANCE] }), // or NEST_CONFIG
   ],
 })
 export class ApplicationModule {}
@@ -47,23 +47,19 @@ import { Get, Query, Post, Body, Param, Put, Delete } from "@nestcloud/feign";
 
 @Injectable()
 export class UserClient {
-    @Get('/users')
+    @Get('http://test.com/users')
     getUsers(@Query('role') role: string) {
     }
     
-    @Get('http://test.com/users')
-    getRemoteUsers() {
-    }
-    
-    @Post('/users')
+    @Post('http://test.com/users')
     createUser(@Body('user') user: any) {
     }
     
-    @Put('/users/:userId')
+    @Put('http://test.com/users/:userId')
     updateUser(@Param('userId') userId: string, @Body('user') user: any) {
     }
     
-    @Delete('/users/:userId')
+    @Delete('http://test.com/users/:userId')
     deleteUser(@Param('userId') userId: string) {
        
     }
@@ -77,7 +73,7 @@ import { Injectable } from "@nestjs/common";
 import { Loadbalanced, Get, Query } from "@nestcloud/feign";
 
 @Injectable()
-@Loadbalanced('user-service') // 开启负载均衡支持，需要依赖 @nestcloud/consul-loadbalance 模块
+@Loadbalanced('user-service') // 开启负载均衡支持
 export class UserClient {
     @Get('/users')
     getUsers(@Query('role') role: string) {
@@ -227,7 +223,7 @@ interceptor1 response
 
 | field | type | description |
 | :--- | :--- | :--- |
-| options.dependencies | string\[\] | 如果 dependencies 设置为 \[NEST\_BOOT\]，则通过 @nestcloud/boot 模块加载配置，如果设置为 \[NEST_CONSUL_CONFIG\] 则通过 @nestcloud/consul-config 加载配置，并支持动态更新 |
+| options.dependencies | string\[\] | NEST_BOOT, NEST_CONFIG, NEST_LOADBALANCE |
 | options.axiosConfig | IGlobalAxiosConfig | axios 全局配置 |
 
 ### Get\|Post\|Put\|Delete\|Options\|Head\|Patch\|Trace\(uri: string, options?: AxiosRequestConfig\): MethodDecorator

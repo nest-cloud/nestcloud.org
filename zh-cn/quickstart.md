@@ -1,25 +1,15 @@
 # 快速开始
 
-## 克隆 nest-cloud-starter
+## nestcloud-consul-starter
 
-```bash
-git clone https://github.com/nest-cloud/nestcloud-starter.git your-project-name
+```shell script
+git clone https://github.com/nest-cloud/nestcloud-consul-starter.git your-project-name
 ```
 
-## 依赖的服务
+## nestcloud-etcd-starter
 
-需要安装 consul 以及 mysql
-
-## 启动
-
-```bash
-npm run start:dev
-```
-
-## 打包
-
-```bash
-npm run build
+```shell script
+git clone https://github.com/nest-cloud/nestcloud-etcd-starter.git your-project-name
 ```
 
 

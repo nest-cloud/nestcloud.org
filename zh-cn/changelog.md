@@ -1,5 +1,51 @@
 # Change Log
 
+## 0.6.5
+
+1. bug fix
+
+## 0.6.3
+
+1. Etcd3 supports
+2. Rename `consul-config` module to `config` module
+3. Config module register must specific NEST_CONSUL or NEST_ETCD dependency
+4. Rename `consul-service` module to `service` module
+5. Service Module register must specific NEST_CONSUL or NEST_ETCD dependency
+6. Service configuration adjusts
+
+## 0.5.3
+
+1. fix bugs
+
+## 0.4.4
+
+1. rename some modules name
+- npm install @nestcloud/consul-loadbalance
++ npm install @nestcloud/loadbalance
+
+- npm install @nestcloud/gateway
++ npm install @nestcloud/proxy
+
+2. fix some bugs
+
+## 0.3.17
+
+1. use NestJS internal logger instead
+2. fix import module with wrong path
+
+## 0.3.13
+
+1. Not crash app when register service fail, it will always retry until register succeed
+2. Redis module support cluster
+
+## 0.3.12
+
+1. Proxy support set timeout to peer request by http header
+2. Proxy support filters
+3. Fix proxy init error when not set filter
+4. New Redis module
+5. New Brakes module
+
 ## 0.3.7
 
 ### Global

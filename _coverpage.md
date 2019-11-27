@@ -24,13 +24,13 @@
 
 ![logo](_media/nestcloud.png)
 
-# NestCloud <small>0.3.7</small>
+# NestCloud <small>0.6.5</small>
 
 > A MicroService Solution.
 
 - Using TypeScript and Nest.js
 - Writing Node MicroService Easily
-- Based On Consul
+- Consul, Etcd, Kubernetes Supports
 
 [GitHub](https://github.com/nest-cloud)
 [Get Started](zh-cn/README.md)

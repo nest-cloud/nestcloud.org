@@ -6,7 +6,7 @@
 
 # NestCloud
 
-<p align="left">
+<p align="center">
     <a href="https://www.npmjs.com/~nestcloud" target="_blank"><img src="https://img.shields.io/npm/v/@nestcloud/core.svg" alt="NPM Version"/></a>
     <a href="https://www.npmjs.com/~nestcloud" target="_blank"><img src="https://img.shields.io/npm/l/@nestcloud/core.svg" alt="Package License"/></a>
     <a href="https://www.npmjs.com/~nestcloud" target="_blank"><img src="https://img.shields.io/npm/dm/@nestcloud/core.svg" alt="NPM Downloads"/></a>
@@ -17,73 +17,144 @@
 
 基于 Consul 的 NodeJS 微服务解决方案，各组件使用 Typescript 语言 和 NestJS 框架编写。
 
-## 安装
+
+## Install
+
+### Consul Backend
 
 ```bash
-npm install --save @nestcloud/core @nestcloud/common @nestcloud/boot @nestcloud/consul @nestcloud/consul-service @nestcloud/consul-config @nestcloud/consul-loadbalance @nestcloud/feign @nestcloud/logger @nestcloud/schedule 
+$ npm install --save @nestcloud/core
+$ npm install --save @nestcloud/common
+$ npm install --save @nestcloud/boot 
+$ npm install --save @nestcloud/consul 
+$ npm install --save @nestcloud/service 
+$ npm install --save @nestcloud/config 
+$ npm install --save @nestcloud/loadbalance 
+$ npm install --save @nestcloud/feign 
+$ npm install --save @nestcloud/logger 
 ```
 
+### Etcd Backend
 
-## 主要组件
+```bash
+$ npm install --save @nestcloud/core
+$ npm install --save @nestcloud/common
+$ npm install --save @nestcloud/boot 
+$ npm install --save @nestcloud/etcd 
+$ npm install --save @nestcloud/service 
+$ npm install --save @nestcloud/config 
+$ npm install --save @nestcloud/loadbalance 
+$ npm install --save @nestcloud/feign 
+$ npm install --save @nestcloud/logger 
+```
 
-### [Boot](zh-cn/boot.md)
+### Kubernetes Backend
 
-在应用启动的时候读取应用本地配置以及系统环境变量。
+```bash
+$ npm install --save @nestcloud/core
+$ npm install --save @nestcloud/common
+$ npm install --save @nestcloud/boot 
+$ npm install --save @nestcloud/config 
+$ npm install --save @nestcloud/loadbalance 
+$ npm install --save @nestcloud/feign 
+$ npm install --save @nestcloud/logger 
+$ npm install --save @nestcloud/kubernetes 
+```
 
+## Examples
 
-### [Consul](zh-cn/consul.md)
+[nestcloud-typeorm-example](https://github.com/nest-cloud/nestcloud-typeorm-example)
 
-Consul 模块
+[nestcloud-grpc-example](https://github.com/nest-cloud/nestcloud-grpc-example)
 
-
-### [Consul-Config](zh-cn/consul-config.md)
-
-从配置中心读取和监听配置。
-
-
-### [Consul-Service](zh-cn/consul-service.md)
-
-服务注册和服务发现。
-
-
-### [Consul-Loadbalance](zh-cn/consul-loadbalance.md)
-
-软件实现的负载均衡，主要为 http 调用提供服务。
-
-
-### [Feign](zh-cn/feign.md)
-
-Http 客户端，支持负载均衡并且支持用 Decorator 编写。
-
-
-### [Grpc](zh-cn/grpc.md)
-
-提供 Grpc，并且支持负载均衡。
+[nestcloud-kubernetes-example](https://github.com/nest-cloud/nestcloud-kubernetes-example)
 
 
-### [Memcached](zh-cn/memcached.md)
+## Starter
 
-Memcached 模块。
+[nestcloud-consul-starter](https://github.com/nest-cloud/nestcloud-consul-starter) 
 
-
-### [Schedule](zh-cn/schedule.md)
-
-支持分布式运行的定时任务库，支持 Decorator 编写。
+[nestcloud-etcd-starter](https://github.com/nest-cloud/nestcloud-etcd-starter) 
 
 
-### [Logger](zh-cn/logger.md)
+## Components
 
-基于 winston@2.x 实现的日志模块。
+#### [Consul](packages/consul)
 
-### [Validations](zh-cn/validations.md)
+Consul module.
 
-Http 请求参数验证模块。
 
-### [Rbac](zh-cn/rbac.md)
+#### [Etcd](packages/etcd)
 
-基于角色的动态权限访问控制
+Etcd module.
 
-## 快速开始
+
+#### [Memcached](packages/memcached)
+
+Memcached module.
+
+
+#### [Kubernetes](packages/kubernetes)
+
+Kubernetes client module.
+
+
+#### [Boot](packages/boot)
+
+Get local configurations.
+
+
+#### [Config](packages/config)
+
+Get & watch remote configurations from Consul KV or Kubernetes ConfigMap.
+
+
+#### [Service](packages/service)
+
+Service registration and service discovery
+
+
+#### [Loadbalance](packages/loadbalance)
+
+Software load balancers primary for rest calls.
+
+
+#### [Feign](packages/feign)
+
+A decorator and loadbalance http client.
+
+
+#### [Grpc](packages/grpc)
+
+A loadbalance grpc client.
+
+
+#### [Proxy](packages/proxy)
+
+A API proxy module.
+
+
+#### [Schedule](packages/schedule)
+
+A job scheduler that supports distributed and decorator.
+
+
+#### [Logger](packages/logger)
+
+Logger module based on winston@2.x
+
+
+#### [Validations](packages/validations)
+
+Validate request params.
+
+
+#### [Rbac](packages/rbac)
+
+Role based access control.
+
+
+## Quick Start
 
 main.ts
 
@@ -111,16 +182,12 @@ app.module.ts
 
 ```typescript
 import { Module } from '@nestjs/common';
-import { 
-    NEST_BOOT, 
-    NEST_CONSUL_LOADBALANCE, 
-    NEST_CONSUL_CONFIG
-} from '@nestcloud/common';
+import { NEST_BOOT, NEST_LOADBALANCE, NEST_CONSUL } from '@nestcloud/common';
 import { BootModule } from '@nestcloud/boot';
 import { ConsulModule } from '@nestcloud/consul';
-import { ConsulConfigModule } from '@nestcloud/consul-config';
-import { ConsulServiceModule } from '@nestcloud/consul-service';
-import { LoadbalanceModule } from '@nestcloud/consul-loadbalance';
+import { ConfigModule } from '@nestcloud/config';
+import { ServiceModule } from '@nestcloud/service';
+import { LoadbalanceModule } from '@nestcloud/loadbalance';
 import { FeignModule } from '@nestcloud/feign';
 import { LoggerModule } from '@nestcloud/logger';
 import { TerminusModule } from '@nestjs/terminus';
@@ -130,10 +197,10 @@ import { TerminusModule } from '@nestjs/terminus';
         LoggerModule.register(),
         BootModule.register(__dirname, `config.yaml`),
         ConsulModule.register({ dependencies: [NEST_BOOT] }),
-        ConsulConfigModule.register({ dependencies: [NEST_BOOT] }),
-        ConsulServiceModule.register({ dependencies: [NEST_BOOT] }),
+        ConfigModule.register({ dependencies: [NEST_BOOT, NEST_CONSUL] }),
+        ServiceModule.register({ dependencies: [NEST_BOOT, NEST_CONSUL] }),
         LoadbalanceModule.register({ dependencies: [NEST_BOOT] }),
-        FeignModule.register({ dependencies: [NEST_BOOT, NEST_CONSUL_LOADBALANCE] }),
+        FeignModule.register({ dependencies: [NEST_BOOT, NEST_LOADBALANCE] }),
         TerminusModule.forRootAsync({
             useFactory: () => ({ endpoints: [{ url: '/health', healthIndicators: [] }] }),
         }),
@@ -143,25 +210,19 @@ export class AppModule {
 }
 ```
 
+## Samples
 
-## Starter
+[Samples](samples)
 
-使用 [NestCloud-Starter](https://github.com/nest-cloud/nestcloud-starter) 快速开始创建你的项目.
-
-
-## 例子
-
-[Samples](https://github.com/nest-cloud/nestcloud/samples)
-
-## 谁在使用 NestCloud
+## Who used
 
 ![焱融云](https://nestcloud.org/_media/who-used/yanrong.svg)
 
 
-## 保持联系
+## Stay in touch
 
-- Author - [miaowing](https://github.com/miaowing)
+- Author - [NestCloud](https://github.com/nest-cloud)
 
 ## License
 
-  NestCloud is [MIT licensed](https://github.com/nest-cloud/nestcloud/LICENSE).
+  NestCloud is [MIT licensed](LICENSE).
