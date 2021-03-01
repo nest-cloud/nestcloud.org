@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/nest-cloud/nestcloud.org#readme",
   "dependencies": {
-    "docsify": "^4.9.1"
+    "docsify": "^4.12.0"
   }
 }
